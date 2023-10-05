@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(41, 41, 41);
+        color: white;
+      }
+      .cotnainer {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .child {
+        width: 130px;
+        height: 130px;
+        background-color: aliceblue;
+        border: 1px dotted bisque;
+        padding: 1px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        animation: abid 0.5s 1 linear;
+        transform-origin: 0;
+      }
+
+      @keyframes abid {
+        0% {
+          top: 0%;
+        }
+        100% {
+          transform-origin: 0;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cotnainer">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
