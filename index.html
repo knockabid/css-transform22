@@ -12,6 +12,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: 0;
       }
       .child {
         width: 130px;
@@ -21,17 +23,20 @@
         padding: 1px;
         box-sizing: border-box;
         border-radius: 10px;
-        transform: translate(-50%, -50%);
-        animation: abid 0.5s 1 linear;
-        transform-origin: 0;
+        animation: abid 5s infinite linear;
+        box-shadow: 10px 10px 100px red;
       }
 
       @keyframes abid {
         0% {
-          top: 0%;
+          transform: rotateX(10deg);
+        }
+        50% {
+          transform: rotateX(100deg);
         }
         100% {
-          transform-origin: 0;
+          transform: rotateY(100deg);
+          box-shadow: 10px 10px 100px red;
         }
       }
     </style>
